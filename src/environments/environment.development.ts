@@ -1,3 +1,3 @@
 export const environment = {
-  apiLocalUrl: 'https:localhost:7252',
+  apiLocalUrl: 'https://scraping-desafio.azurewebsites.net',
 };
