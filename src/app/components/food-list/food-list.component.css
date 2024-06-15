@@ -1,0 +1,49 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+}
+th{
+  color: #49505B;
+}
+td{
+  color: #005C4B;
+}
+
+td a:hover{
+  color: #72E3AD;
+}
+
+thead {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #d1e7dd;
+}
+
+button{
+  background-color: #005C4B;
+}
+
+.container{
+  margin-left: 10px;
+}
+label{
+  font-size: 20px;
+}
+button:hover{
+  background-color: #72E3AD;
+}
+

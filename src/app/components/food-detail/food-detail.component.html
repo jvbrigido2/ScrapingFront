@@ -1,0 +1,35 @@
+<div *ngIf="foodItem">
+  <div class="container">
+    <h3>Componentes de {{ foodItem.name }}</h3>
+    <button class="btn btn-secondary" (click)="backHome()">Voltar</button>
+  </div>
+
+  <table class="table table-striped mt-4">
+    <thead>
+      <tr>
+        <th scope="col">Componente</th>
+        <th scope="col">Unidades</th>
+        <th scope="col">Valor por 100 g</th>
+        <th scope="col">Desvio padrão</th>
+        <th scope="col">Valor Mínimo</th>
+        <th scope="col">Valor Máximo</th>
+        <th scope="col">Número de dados utilizados</th>
+        <th scope="col">Referências</th>
+        <th scope="col">Tipo de dados</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let component of foodItem.components">
+        <td>{{ component.name }}</td>
+        <td>{{ component.unit }}</td>
+        <td>{{ component.valuePer100g }}</td>
+        <td>{{ component.standardDeviation }}</td>
+        <td>{{ component.minimumValue }}</td>
+        <td>{{ component.maximumValue }}</td>
+        <td>{{ component.numberOfDataUsed }}</td>
+        <td>{{ component.references }}</td>
+        <td>{{ component.dataType }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

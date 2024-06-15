@@ -1,0 +1,25 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+}
+a:hover{
+  background-color: #72E3AD;
+}
+.container{
+  margin-left: 10px;
+}
+
+button{
+  background-color: #005C4B;
+}
+
+button:hover{
+  background-color: #72E3AD;
+}

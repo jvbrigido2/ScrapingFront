@@ -1,0 +1,39 @@
+<div class="container mt-4 mb-3">
+  <label for="food" style="color: #757575" class="mb-2">Alimento</label><br />
+  <input
+    [(ngModel)]="searchTerm"
+    placeholder="Informe um alimento"
+    id="food"
+    class="form-control"
+  />
+  <div>
+    <button class="btn mt-4 btn-secondary" (click)="searchFoods()">
+      Buscar
+    </button>
+  </div>
+</div>
+
+<div>
+  <table class="table table-striped mt-5">
+    <thead>
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Nome Científico</th>
+        <th scope="col">Grupo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let foodItem of foodItems">
+        <td>
+          <a (click)="viewDetails(foodItem.code)">{{ foodItem.code }}</a>
+        </td>
+        <td>
+          <a (click)="viewDetails(foodItem.code)">{{ foodItem.name }}</a>
+        </td>
+        <td>{{ foodItem.scientificName }}</td>
+        <td>{{ foodItem.group }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
